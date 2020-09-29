@@ -1,5 +1,5 @@
 console.log(window.location.pathname);
-if(window.location.pathname==="https://seif-el-deen.github.io/My-Site/Certificates.html"){
+if(window.location.pathname==="/My-Site/Certificates.html"){
     // Certificates items  Start
     //Displaying Certificate Start
     const img1=document.getElementById("item1");

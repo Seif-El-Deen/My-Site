@@ -1,0 +1,225 @@
+/* Form Page Start  */
+/* @import url('<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">'); */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    outline: none;
+    font-family: 'Roboto',sans-serif;
+}
+body{
+    /* background: url('') no-repeat top center;
+    background-size: cover; */
+    height: 100vh;
+}
+.wrapper{
+    /* position: absolute;
+    top: 20%; */
+    /* transform:translateY(-50%); */
+    width: 100%;
+    padding: 0 20px;
+    margin-top: 30px;
+}
+.contact-form{
+    max-width: 550px;
+    margin: 0 auto;
+    background: rgba(0,0,0,0.8);
+    padding: 30px;
+    border-radius: 10px;
+    display: flex;
+    box-shadow: 0 0 10px rgba(0,0,0,0.13);
+}
+.input-fields{
+    display:flex;
+    flex-direction: column;
+    margin-right: 4%;
+}
+.input-fields,
+.msg{
+    width: 48%;
+}
+.input-fields .input,
+.msg textarea{
+    margin: 10px 0;
+    background: transparent;
+    border: 0;
+    border-bottom: 2px solid #c5ecfd;
+    padding: 10px;
+    color: #c5ecfd;
+    width: 100%;
+}
+.msg textarea{
+    height: 212px;
+}
+
+::-webkit-input-placeholder{
+    color: #c5ecfd;
+}
+/* Firefox Browser */
+::maz-input-placeholder{
+    color: #c5ecfd;
+}
+/* Internet explorer Browser */
+::-ms-input-placeholder{
+    color: #c5ecfd;
+}
+
+.btn{
+    background: #39b7dd;
+    text-align: center;
+    padding: 15px;
+    border-radius: 10px;
+    color: #ffffff;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width:600px){
+    .contact-form{
+        flex-direction: column;
+    }
+    .msg textarea{
+        height: 80px;
+    }
+    .input-fields,
+    .msg{
+        width: 100%;
+    }
+}
+
+/* login Modal Form  */
+ /* Form's Border */
+form{
+    border: 3px solid #f1f1f1;
+}
+/* Full width inputs */
+input[type=text],input[type=password]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+ /* Set a style for all buttons */
+ button{
+     background-color: #1b9bff;
+     color: white;
+     padding: 14px 20px;
+     margin: 8px 0;
+     border: none;
+     cursor: pointer;
+     width: 100%;
+}
+/* Hover effect for buttons */
+button:hover{
+    opacity: 0.8;
+}
+/* Extra Style for the cancel button  */
+.cancelbtn{
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+ /* Padding to Containers */
+ .container{
+     padding: 16px;
+ }
+ /* Forgot password text  */
+span.password{
+    float: right;
+    padding-top: 16px;
+}
+
+/* Modal background */
+.modal{
+    display: none; /*To be Hidden by default */
+    position: fixed; /*Stay in one fixed place*/
+    z-index: 1; /*Staaay on top of the other page content*/
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /*Enable Scroll if needed*/
+    background-color:rgba(0,0,0,0.4);
+    padding-top: 60px;
+}
+.modal-content{
+    background-color: #fefefe;
+    margin: 5px auto; /*15% rom the top n centered*/
+    border: 1px solid #888;
+    width: 80%;
+}
+/* the exit button */
+.close{
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+ /* The exit button on hovering */
+ .close:hover,
+ .close:focus{
+     color: red;
+     cursor: pointer;
+ }
+
+
+ /* Pop up Message  Start*/
+ div.popUpMessage{
+    display: none;
+    position: fixed; /*Stay in one fixed place*/
+    z-index: 1; /*Staaay on top of the other page content*/
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /*Enable Scroll if needed*/
+    background-color:rgba(0,0,0,0.4);
+    text-align: center;
+    padding: 5px;
+}
+div.popUpMessage div.content{
+    position: relative;
+    top: 30%;
+    left: 25%;
+    background-color: white;
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
+}
+div.popUpMessage div.content h1{
+    background-color: #1b9bff;
+    padding: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+div.popUpMessage div.content h1 i{
+    float: right;
+}
+div.popUpMessage div.content h1 i:hover{
+    color: red;
+}
+div.popUpMessage div.content div{
+    font-size: 20px;
+    padding: 10px;
+}
+div.popUpMessage div.content div i{
+    font-size: 30px;
+    color: red;
+}
+@media(max-width:500px){
+    div.popUpMessage div.content{
+        width: 90%;
+        margin-right: 10px;
+        margin-left: 10px;
+        left: 0;
+
+    }
+}
+
+ /* Pop up Message  End*/

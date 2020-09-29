@@ -1,5 +1,5 @@
 console.log(window.location.pathname);
-if(window.location.pathname == "https://seif-el-deen.github.io/My-Site/Certificates.html"){
+if(window.location.pathname == "/My-Site/Certificates.html"){
     // Certificates items  Start
     //Displaying Certificate Start
     const img1=document.getElementById("item1");
@@ -112,6 +112,9 @@ if(window.location.pathname == "https://seif-el-deen.github.io/My-Site/Certifica
     closeModal11.addEventListener('click',function(){
         document.getElementById("img-modal-parent").style.display="none";
     })
+}
+else{
+    console.log("Not Certificates Page");
 }
 
 /* To remove the form in the form page when the navbar button is pressed*/

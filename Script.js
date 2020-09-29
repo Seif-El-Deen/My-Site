@@ -1,5 +1,5 @@
 console.log(window.location.pathname);
-if(window.location.pathname == '/Certificates.html'){
+if(window.location.pathname == "/Certificates.html"){
     // Certificates items  Start
     //Displaying Certificate Start
     const img1=document.getElementById("item1");

@@ -288,7 +288,7 @@ div.page-content div.item img.img:hover{
 #img-modal-parent,#img-modal-1,#img-modal-2,#img-modal-3,
 #img-modal-4,#img-modal-5,#img-modal-6,
 #img-modal-7,#img-modal-8,#img-modal-9,
-#img-modal-10,#img-modal-11{
+#img-modal-10,#img-modal-11,#img-modal-12,#img-modal-13{
     display: none;
 }
 @media(max-width:1300px){

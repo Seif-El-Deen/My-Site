@@ -13,6 +13,8 @@ if(window.location.pathname == "/My-Site/Certificates.html"){
     const img9=document.getElementById("item9");
     const img10=document.getElementById("item10");
     const img11=document.getElementById("item11");
+    const img12=document.getElementById("item12");
+    const img13=document.getElementById("item13");
 
     img1.addEventListener("click",function(){
         document.getElementById("img-modal-parent").style.display="block";
@@ -58,6 +60,16 @@ if(window.location.pathname == "/My-Site/Certificates.html"){
         document.getElementById("img-modal-parent").style.display="block";
         document.getElementById("img-modal-11").style.display="block";
     });
+    
+    img12.addEventListener("click",function(){
+        document.getElementById("img-modal-parent").style.display="block";
+        document.getElementById("img-modal-12").style.display="block";
+    });
+    
+    img13.addEventListener("click",function(){
+        document.getElementById("img-modal-parent").style.display="block";
+        document.getElementById("img-modal-13").style.display="block";
+    });
     //Displaying Certificate End
 
     //Removing Certificates Start
@@ -73,6 +85,8 @@ if(window.location.pathname == "/My-Site/Certificates.html"){
     const closeModal9=document.getElementById("close-modal-9");
     const closeModal10=document.getElementById("close-modal-10");
     const closeModal11=document.getElementById("close-modal-11");
+    const closeModal12=document.getElementById("close-modal-12");
+    const closeModal13=document.getElementById("close-modal-13");
     closeModalParent.addEventListener("click",function(e){
         if(e.target.className=="img-modal-parent"){
             document.getElementById("img-modal-parent").style.display="none";
@@ -110,6 +124,12 @@ if(window.location.pathname == "/My-Site/Certificates.html"){
         document.getElementById("img-modal-parent").style.display="none";
     })
     closeModal11.addEventListener('click',function(){
+        document.getElementById("img-modal-parent").style.display="none";
+    })
+    closeModal12.addEventListener('click',function(){
+        document.getElementById("img-modal-parent").style.display="none";
+    })
+    closeModal13.addEventListener('click',function(){
         document.getElementById("img-modal-parent").style.display="none";
     })
 }
